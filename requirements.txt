@@ -1,0 +1,11 @@
+# It has all the packages that we need to install at the time of implementing the project
+
+numpy
+pandas
+seaborn
+-e.
+#when we trying to install packages in requirements.txt file at that setup.py should also run to build the packages.
+#to enable that we need to add -e. which automatically triggers setup.py
+
+# Now we need to make changes in setup.py in get_requirements function to remove the -e. from the function. Now for this
+# what we could do is we could write a condition to remove if -e.
